@@ -1,0 +1,30 @@
+@import './base.css';
+
+#app {
+  max-width: 100%;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(0, 128, 0);
+  transition: 0.2s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgb(0, 255, 0, 50%);
+  }
+}
+
+@media (min-width: 100%) {
+  body {
+    display: flex;
+  }
+
+  #app {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+}
